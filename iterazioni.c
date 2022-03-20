@@ -3,29 +3,32 @@ int main()
 { 
    int numero;
    scanf("%d", &numero);
-   if(numero==1){
-      printf("Lunedì\n"); 
-   }
-   else if(numero==2){
-      printf("Martedì\n"); 
-   }
-   else if(numero==3){
-      printf("Mercoledì\n"); 
-   }
-   else if(numero==4){
-      printf("Giovedì\n"); 
-   }
-   else if(numero==5){
-      printf("Venerdì\n"); 
-   }
-   else if(numero==6){
-      printf("Sabato\n"); 
-   }
-   else if(numero==7){
-      printf("Domenica\n"); 
-   }
-   else{
-       printf("Giorno non valido\n"); 
+   switch (numero)
+   {
+   case 1:
+       printf("Lunedì\n"); 
+       break;
+   case 2:
+       printf("Martedì\n"); 
+       break;
+    case 3:
+       printf("Mercoledì\n"); 
+       break;
+    case 4:
+       printf("Giovedì\n"); 
+       break;
+    case 5:
+       printf("Venerdì\n"); 
+       break;
+    case 6:
+       printf("Sabato\n"); 
+       break;
+    case 7:
+       printf("Domenica\n"); 
+       break;
+   default:
+       printf("Giorno non valido\n");
+       break;
    }
    return 0;
 }
