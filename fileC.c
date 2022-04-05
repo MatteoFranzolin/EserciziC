@@ -1,20 +1,20 @@
 #include <stdio.h>
 int main()
-{ 
-   int input;
+{
    int i;
-   int array[10];
+   int vettore[10];
+   printf("Inserisci 10 numeri interi:\n");
    for(i=0; i<10; i++){
-      scanf("%d", &array[i]);
+      scanf("%d", &vettore[i]);
    }
    for(i=0; i<10; i++){
-         if(array[i]%2==0){
-          printf("%d / ", array[i]);
+         if(vettore[i]%2==0){
+          printf("%d / ", vettore[i]);
          }
       }
    for(i=0; i<10; i++){
-         if(array[i]%2!=0){
-          printf("%d / ", array[i]);
+         if(vettore[i]%2!=0){
+          printf("%d / ", vettore[i]);
          }
       }
    return 0; 
