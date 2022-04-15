@@ -2,25 +2,25 @@
 #include <string.h>
 int main()
 {
-   char scrivi1[40]="Ciao come stai?";
-   char scrivi2[40];
-   char scrivi3[40]= "Bene";
-   char *sub;
-   printf("La lunghezza della prima stringa è: %d\n",strlen(scrivi1));
-   strcpy(scrivi2,scrivi1);
-   printf("Il valore della stringa copiata è: %s\n", scrivi2);
-   strcat(scrivi1, scrivi3);
-   printf("Il valore della stringa concatenata è: %s\n", scrivi1);
-   if(strcmp(scrivi1, scrivi2)==0){
-      printf("Le stringhe sono uguali\n");
+   int numero;
+   do{
+      printf("Inserisci un numero maggiore di 3: ");
+      scanf("%d", &numero);
+   }while(numero<3);
+   for(int i=0; i<numero; i++){
+      printf("*");
    }
-   else{
-      printf("Le stringhe sono diverse\n");
+   for(int i=0; i<numero-2; i++){
+      printf("\n*");
+      for(int j=0; j<numero-2; j++){
+         printf(" ");
+      }
+      printf("*");
    }
-   printf("La stringa in reverse è: %s",strrev(scrivi1));
-   printf("La stringa in minuscolo è: %s",strlwr(scrivi1));
-   printf("La stringa in maiuscolo è: %s",strupr(scrivi1));
-   sub=strstr(scrivi1, "come");
-   printf("La sottostringa è: %s",sub);
+   printf("\n");
+   for(int i=0; i<numero; i++){
+      printf("*");
+   }
+   printf("\n");
    return 0; 
 }
